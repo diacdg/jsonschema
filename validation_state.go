@@ -138,7 +138,6 @@ func (vs *ValidationState) AddError(data interface{}, msg string) {
 	}
 	*vs.Errs = append(*vs.Errs, KeyError{
 		PropertyPath: instancePath,
-		InvalidValue: data,
 		Message:      msg,
 	})
 }
